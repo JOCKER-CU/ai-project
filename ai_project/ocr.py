@@ -1,14 +1,5 @@
-import easyocr
 import cv2
 import numpy as np
-import torch
-
-# def initialize_ocr_reader():
-#     """Initialize the EasyOCR reader with GPU if available"""
-#     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-#     return easyocr.Reader(['en'], gpu=device.type == 'cuda')
-
-
 
 def process_image_for_ocr(image_path, reader):
     """Process image with EasyOCR"""
